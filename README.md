@@ -32,8 +32,8 @@ Before getting started, make sure you meet the following requirements for a Node
 To install it, follow these steps:
 
 ```bash
-git clone <repository_url>
-cd <project_name>
+git clone https://github.com/dspedroborges/nutritionist-landing-page
+cd nutritionist-landing-page
 npm install
 ```
 
