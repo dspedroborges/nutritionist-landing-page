@@ -26,6 +26,7 @@ Before getting started, make sure you meet the following requirements for a Node
 - React.js
 - Tailwind CSS
 - react-icons
+- aos
 
 ## Installing
 

@@ -1,5 +1,7 @@
-import type { ReactNode } from "react";
+import { useEffect, type ReactNode } from "react";
 import { BsWhatsapp } from "react-icons/bs";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 export default function Hero({
   title,
@@ -18,10 +20,14 @@ export default function Hero({
   backgroundImage: string;
   cards?: { icon: ReactNode; name: string }[];
 }) {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="flex flex-col md:flex-row items-center bg-yellow-50 min-h-[80vh] relative px-4 md:px-16 py-8 md:py-0">
       <div className="md:w-1/2 flex flex-col justify-center mb-8 md:mb-0">
-        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight md:leading-snug mb-4 text-center md:text-left">
+        <h2 data-aos="fade-up" className="text-4xl md:text-6xl font-extrabold leading-tight md:leading-snug mb-4 text-center md:text-left">
           {title.split("\n").map((line, i) => (
             <span key={i}>
               {line}
@@ -29,7 +35,7 @@ export default function Hero({
             </span>
           ))}
         </h2>
-        <p className="mb-4 text-gray-700 text-justify md:text-left text-base md:text-lg">
+        <p data-aos="fade-up"  className="mb-4 text-gray-700 text-justify md:text-left text-base md:text-lg">
           {description}
         </p>
         <a
@@ -52,8 +58,8 @@ export default function Hero({
       </div>
 
       <div className="flex flex-wrap gap-4 lg:absolute -bottom-16 md:-bottom-8 left-0 w-full justify-center px-4 z-50">
-        {cards.map((card, idx) => (
-          <LittleCard key={idx} icon={card.icon} name={card.name} />
+        {cards.map((card, i) => (
+          <div data-aos="fade-up" data-aos-duration={`${i * 750}`} ><LittleCard key={i} icon={card.icon} name={card.name} /></div>
         ))}
       </div>
     </div>
