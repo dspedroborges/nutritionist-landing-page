@@ -1,8 +1,5 @@
-import type React from "react";
-import { useEffect, useState } from "react";
 import { BiDumbbell, BiFoodMenu } from "react-icons/bi";
-import { BsCheck2Circle, BsGithub, BsGlobe, BsLinkedin, BsWhatsapp } from "react-icons/bs"
-import { FaArrowUp } from "react-icons/fa";
+import { BsGithub, BsGlobe, BsLinkedin, BsWhatsapp } from "react-icons/bs"
 import { MdWoman } from "react-icons/md";
 import { SiPortainer } from "react-icons/si";
 import Hero from "./components/Hero";
