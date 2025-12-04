@@ -51,10 +51,11 @@ export default function Hero({
 
       <div className="md:w-1/2 w-full h-64 md:h-full relative">
         <div
+          data-aos="fade-down"
           className="absolute inset-0 bg-cover bg-center bg-fixed"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         ></div>
-        <img src={mainImage} className="relative w-full h-full object-contain" />
+        <img data-aos="fade-up" src={mainImage} className="relative w-full h-full object-contain" />
       </div>
 
       <div className="flex flex-wrap gap-4 lg:absolute -bottom-16 md:-bottom-8 left-0 w-full justify-center px-4 z-50">
