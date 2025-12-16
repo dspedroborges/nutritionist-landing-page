@@ -66,7 +66,7 @@ function App() {
           { icon: <BiFoodMenu />, name: "Educação Alimentar" },
         ]}
       />
-      <Reasons title={`Por que preciso de\num nutricionista?`} backgroundImage="food.png" reasons={reasons} />
+      <Reasons title={`Por que preciso de\num nutricionista?`} backgroundImage="food.webp" reasons={reasons} />
       <About
         name="Dr. João Silva"
         title="Permita-me apresentar"

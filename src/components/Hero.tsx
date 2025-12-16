@@ -25,9 +25,9 @@ export default function Hero({
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center bg-yellow-50 min-h-screen relative px-4 md:px-16 py-8 md:py-0">
-      <div className="md:w-1/2 flex flex-col justify-center mb-8 md:mb-0">
-        <h2 data-aos="fade-up" className="text-4xl md:text-6xl font-extrabold leading-tight md:leading-snug mb-4 text-center md:text-left">
+    <div className="flex flex-col lg:flex-row items-center bg-yellow-50 min-h-screen relative px-4 lg:px-16 py-8 lg:py-0">
+      <div className="lg:w-1/2 flex flex-col justify-center mb-8 lg:mb-0">
+        <h2 data-aos="fade-up" className="text-4xl lg:text-6xl font-extrabold leading-tight lg:leading-snug mb-4 text-center lg:text-left">
           {title.split("\n").map((line, i) => (
             <span key={i}>
               {line}
@@ -35,21 +35,21 @@ export default function Hero({
             </span>
           ))}
         </h2>
-        <p data-aos="fade-up"  className="mb-4 text-gray-700 text-justify md:text-left text-base md:text-lg">
+        <p data-aos="fade-up"  className="mb-4 text-gray-700 text-justify lg:text-left text-base lg:text-lg">
           {description}
         </p>
         <a
           href={buttonLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-linear-to-r from-green-500 to-green-800 text-white px-4 py-2 rounded-xl hover:opacity-80 cursor-pointer text-lg font-bold self-center md:self-start mt-2 flex items-center gap-2"
+          className="w-full lg:w-auto text-center bg-linear-to-r from-green-500 to-green-800 text-white px-4 py-2 rounded-xl hover:opacity-80 cursor-pointer text-lg font-bold self-center lg:self-start mt-2 flex justify-center items-center gap-2"
         >
           <BsWhatsapp />
           <span>{buttonText}</span>
         </a>
       </div>
 
-      <div className="md:w-1/2 w-full h-64 md:h-full relative">
+      <div className="lg:w-1/2 w-full h-1/2 lg:h-full relative mb-4">
         <div
           data-aos="fade-down"
           className="absolute inset-0 bg-cover bg-center bg-fixed"
@@ -64,7 +64,7 @@ export default function Hero({
         />
       </div>
 
-      <div className="flex flex-wrap gap-4 lg:absolute -bottom-16 md:-bottom-8 left-0 w-full justify-center px-4 z-50">
+      <div className="flex flex-wrap gap-4 lg:absolute -bottom-16 lg:-bottom-8 left-0 w-full justify-center px-4 z-50">
         {cards.map((card, i) => (
           <div data-aos="fade-up" data-aos-duration={`${i * 750}`} ><LittleCard key={i} icon={card.icon} name={card.name} /></div>
         ))}

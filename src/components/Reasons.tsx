@@ -17,7 +17,7 @@ export default function Reasons({
   return (
     <section
       id="reasons"
-      className="bg-gray-100 relative flex flex-col md:flex-row items-center justify-center py-24 md:py-32 gap-8 text-white bg-size-[30%] bg-no-repeat bg-center"
+      className="bg-gray-100 relative flex flex-col md:flex-row items-center justify-center py-24 md:py-32 gap-8 text-white bg-size-[100%] lg:bg-size-[33%] bg-no-repeat bg-center px-8"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <h2

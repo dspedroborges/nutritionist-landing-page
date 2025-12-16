@@ -40,17 +40,17 @@ export default function FAQ({
             const isOpen = openIndex === i;
 
             return (
-              <li key={i} className="rounded-lg bg-gray-100">
+              <li key={i} className="rounded-lg bg-gray-100 hover:bg-gray-200">
                 <button
                   type="button"
                   onClick={() => toggle(i)}
                   className="flex w-full items-center justify-between gap-4 border-b border-gray-300 p-5 text-left"
                 >
-                  <h3 className="font-semibold text-gray-700 sm:text-lg md:text-xl">
+                  <h3 className="font-semibold text-gray-700 cursor-pointer sm:text-lg md:text-xl">
                     {faq.question}
                   </h3>
 
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-300 text-gray-600">
+                  <span className="flex shrink-0 h-8 w-8 items-center justify-center rounded-full bg-gray-300 text-gray-600 text-lg cursor-pointer hover:bg-gray-200">
                     {isOpen ? "−" : "+"}
                   </span>
                 </button>

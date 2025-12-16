@@ -1,6 +1,7 @@
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { BsCaretLeftFill, BsCaretRightFill } from "react-icons/bs";
 
 export interface Review {
   name: string;
@@ -58,14 +59,14 @@ export default function Reviews({ reviews }: ReviewsProps) {
             onClick={() => instanceRef.current?.prev()}
             className="absolute left-0 top-1/2 -translate-y-1/2 p-2 cursor-pointer text-2xl"
           >
-            ‹
+            <BsCaretLeftFill />
           </button>
 
           <button
             onClick={() => instanceRef.current?.next()}
             className="absolute right-0 top-1/2 -translate-y-1/2 p-2 cursor-pointer text-2xl"
           >
-            ›
+            <BsCaretRightFill />
           </button>
         </div>
       </div>
