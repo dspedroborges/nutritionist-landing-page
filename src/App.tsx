@@ -57,8 +57,8 @@ function App() {
         description="Transforme sua saúde com acompanhamento nutricional personalizado. Planos alimentares pensados para você, que equilibram bem-estar, energia e qualidade de vida."
         buttonLink="https://wa.me/5561996524269"
         buttonText="Agendar Consulta"
-        mainImage="man.png"
-        backgroundImage="leafs.png"
+        mainImage="man.webp"
+        backgroundImage="leafs.webp"
         cards={[
           { icon: <SiPortainer />, name: "Nutrição Esportiva" },
           { icon: <BiDumbbell />, name: "Hipertrofismo" },
@@ -71,7 +71,7 @@ function App() {
         name="Dr. João Silva"
         title="Permita-me apresentar"
         description="Dr. João Silva é nutricionista formado pela Universidade XYZ, com mais de 12 anos de experiência em nutrição clínica e esportiva. Ele cria planos alimentares personalizados que ajudam cada paciente a atingir saúde, bem-estar e qualidade de vida."
-        image="/man.png"
+        image="/man.webp"
         buttonLink="https://wa.me/5561996524269"
         buttonText="Agendar Consulta"
         buttonIcon={<BsWhatsapp />}

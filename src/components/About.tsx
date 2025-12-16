@@ -27,6 +27,7 @@ export default function About({
             src={image}
             alt={name}
             className="object-cover rounded-xl"
+            loading="lazy"
           />
         </div>
         {/* Texto */}

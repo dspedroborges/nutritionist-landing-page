@@ -25,7 +25,7 @@ export default function Hero({
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center bg-yellow-50 min-h-[80vh] relative px-4 md:px-16 py-8 md:py-0">
+    <div className="flex flex-col md:flex-row items-center bg-yellow-50 min-h-screen relative px-4 md:px-16 py-8 md:py-0">
       <div className="md:w-1/2 flex flex-col justify-center mb-8 md:mb-0">
         <h2 data-aos="fade-up" className="text-4xl md:text-6xl font-extrabold leading-tight md:leading-snug mb-4 text-center md:text-left">
           {title.split("\n").map((line, i) => (
@@ -55,7 +55,13 @@ export default function Hero({
           className="absolute inset-0 bg-cover bg-center bg-fixed"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         ></div>
-        <img data-aos="fade-up" src={mainImage} className="relative w-full h-full object-contain" />
+        <img
+          data-aos="fade-up"
+          src={mainImage}
+          alt="Image of a man"
+          className="relative w-full h-full object-contain"
+          loading="lazy"
+        />
       </div>
 
       <div className="flex flex-wrap gap-4 lg:absolute -bottom-16 md:-bottom-8 left-0 w-full justify-center px-4 z-50">
