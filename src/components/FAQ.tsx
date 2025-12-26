@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from "react";
-import { BsWhatsapp } from "react-icons/bs";
+import { BsDash, BsPlus, BsWhatsapp } from "react-icons/bs";
 
 type FAQItem = {
   question: string;
@@ -44,19 +44,19 @@ export default function FAQ({
                 <button
                   type="button"
                   onClick={() => toggle(i)}
-                  className="flex w-full items-center justify-between gap-4 border-b border-gray-300 p-5 text-left"
+                  className="cursor-pointer flex w-full items-center justify-between gap-4 border-b border-gray-300 p-5 text-left"
                 >
                   <h3 className="font-semibold text-gray-700 cursor-pointer sm:text-lg md:text-xl">
                     {faq.question}
                   </h3>
 
-                  <span className="flex shrink-0 h-8 w-8 items-center justify-center rounded-full bg-gray-300 text-gray-600 text-lg cursor-pointer hover:bg-gray-200">
-                    {isOpen ? "−" : "+"}
+                  <span className="flex shrink-0 h-8 w-8 items-center justify-center rounded-full bg-gray-300 text-gray-600 text-lg cursor-pointer hover:bg-gray-400 hover:text-white">
+                    {isOpen ? <BsDash/> : <BsPlus/>}
                   </span>
                 </button>
 
                 {isOpen && (
-                  <div className="p-5 pt-4 text-gray-500">
+                  <div className="p-5 pt-4 text-gray-800">
                     {faq.answer}
                   </div>
                 )}
